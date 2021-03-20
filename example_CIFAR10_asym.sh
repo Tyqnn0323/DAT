@@ -1,0 +1,1 @@
+python main.py --dataset cifar10 --noise_type asym --noise_rate 0.45 --alpha 0.005 --beta 30

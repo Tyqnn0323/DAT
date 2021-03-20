@@ -1,0 +1,1 @@
+python main.py --dataset mnist --noise_type sym --noise_rate 0.8 --alpha 0.18 --beta 60
