@@ -16,8 +16,8 @@ def loss_crossent(y_1, y_2, t):
     return loss_1, loss_2
 #Ldis
 def Loss_dis(out1, out2):
-    out1 = F.softmax(out1)
-    out2 = F.softmax(out2)
+    out1 = F.softmax(out1,dim=0)
+    out2 = F.softmax(out2,dim=0)
     assert out1.size() == out2.size()
     out1_log_softmax = F.log_softmax(out1, dim=1)
     out2_softmax = F.softmax(out2, dim=1)
